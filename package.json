@@ -12,5 +12,13 @@
     "cors": "^2.8.5",
     "express": "^4.18.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaseHilton/week4Redo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChaseHilton/week4Redo/issues"
+  },
+  "homepage": "https://github.com/ChaseHilton/week4Redo#readme",
   "description": ""
 }

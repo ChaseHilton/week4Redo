@@ -19,8 +19,8 @@ module.exports = {
   },
 
   addDrip: (req, res) => {
-    let { drip } = req.body;
-    closet.push(drip);
+    let { item } = req.body;
+    closet.push(item);
 
     res.status(200).send(closet);
   },
@@ -28,7 +28,7 @@ module.exports = {
   deleteDrip: (req, res) => {
     let index = req.params.index;
 
-    weapons.splice(index, 1);
+    closet.splice(index, 1);
 
     res.status(200).send(closet);
   },

@@ -38,7 +38,7 @@ const getCloset = () => {
 };
 
 const addNewDrip = (event) => {
-  event.preventdefault();
+  event.preventDefault();
 
   let bodyObject = {
     item: addInput.value,
@@ -65,7 +65,7 @@ const addNewDrip = (event) => {
 };
 
 const deleteItem = (event) => {
-  event.preventdefault();
+  event.preventDefault();
 
   axios.delete(`${getURL}/api/deleteDrip/${deleteInput.value}`).then((res) => {
     const closet = res.data;
@@ -80,7 +80,7 @@ const deleteItem = (event) => {
 };
 
 const editItem = (event) => {
-  event.preventdefault();
+  event.preventDefault();
 
   let bodyObject = {
     item: editInput.value,
